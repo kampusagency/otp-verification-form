@@ -1,0 +1,94 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #95aef1;
+}
+
+:where(.container, form, .input-field, header) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 2.5rem 5rem;
+  border-radius: 0.3rem;
+  row-gap: 1.3rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+  height: 65px;
+  width: 65px;
+  background: #4070f4;
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+
+.container h4{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+}
+
+form .input-field{
+    column-gap: 10px;
+    flex-direction: row;
+}
+
+.input-field input{
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    outline: none;
+    text-align: center;
+    font-size: 1.125rem;
+    border: 1px solid #ddd;
+}
+
+.input-field input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button{
+    display: none;
+}
+
+form button{
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 9px 0;
+    margin-top: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    pointer-events: none;
+    background-color: #6e93f7;
+    transition: all 0.2s ease;
+}
+
+form button.active{
+    background: #4070f4;
+    pointer-events: auto;
+}
+
+form button:hover{
+    background-color: #0e4bf1;
+}
