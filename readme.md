@@ -3,7 +3,7 @@
 ![Preview](./preview.png)
 
 
-########### Languages
+###### Languages
 - html
 - css
 - js
